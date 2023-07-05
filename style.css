@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #212529, #2a6cad);
+  padding: 10px;
+}
+
+.Todo-app {
+  width: 100%;
+  max-width: 540px;
+  background-color: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 7px;
+  border-radius: 10px;
+}
+
+.Todo-app h3 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.Todo-app img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.input-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.input-main input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+}
+
+.input-main button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background-color: #2a6cad;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.list-main ul li {
+  font-size: 17px;
+  padding: 12px 8px 12px 5px;
+  position: relative;
+}
+
+.list-main ul li::marker {
+  color: #2a6cad;
+}
+
+.editbtn {
+  position: absolute;
+  top: 0;
+  right: 115px;
+  border: none;
+  outline: none;
+  padding: 7px 25px;
+  background-color: #2a6cad;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.deletebtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  border: none;
+  outline: none;
+  padding: 7px 25px;  
+  background-color: #2a6cad;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.editbtn:hover,
+.deletebtn:hover {
+  background-color: #18426b;
+  transition: 0.3s;
+}
